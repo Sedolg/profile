@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03141a"/>
+      <stop offset="1" stop-color="#0a2a33"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#14b8a6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <!-- chip -->
+  <g transform="translate(140 175)">
+    <g stroke="#5eead4" stroke-opacity="0.5" stroke-width="4">
+      <path d="M60 0V-30M110 0V-30M160 0V-30M210 0V-30M260 0V-30"/>
+      <path d="M60 320V350M110 320V350M160 320V350M210 320V350M260 320V350"/>
+      <path d="M0 60H-30M0 110H-30M0 160H-30M0 210H-30M0 260H-30"/>
+      <path d="M320 60H350M320 110H350M320 160H350M320 210H350M320 260H350"/>
+    </g>
+    <rect width="320" height="320" rx="28" fill="#0c3440" stroke="#5eead4" stroke-opacity="0.6" stroke-width="3"/>
+    <g fill="#5eead4">
+      <rect x="40" y="40" width="70" height="70" rx="10" fill-opacity="0.85"/>
+      <rect x="125" y="40" width="70" height="70" rx="10" fill-opacity="0.45"/>
+      <rect x="210" y="40" width="70" height="70" rx="10" fill-opacity="0.7"/>
+      <rect x="40" y="125" width="70" height="70" rx="10" fill-opacity="0.35"/>
+      <rect x="125" y="125" width="70" height="70" rx="10" fill-opacity="0.9"/>
+      <rect x="210" y="125" width="70" height="70" rx="10" fill-opacity="0.5"/>
+      <rect x="40" y="210" width="70" height="70" rx="10" fill-opacity="0.6"/>
+      <rect x="125" y="210" width="70" height="70" rx="10" fill-opacity="0.3"/>
+      <rect x="210" y="210" width="70" height="70" rx="10" fill-opacity="0.8"/>
+    </g>
+  </g>
+  <!-- chart -->
+  <g transform="translate(620 150)">
+    <rect width="460" height="400" rx="22" fill="#062028" stroke="#ffffff" stroke-opacity="0.08"/>
+    <rect x="30" y="30" width="180" height="14" rx="7" fill="#99f6e4" fill-opacity="0.5"/>
+    <path d="M40 350H420" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2"/>
+    <rect x="70" y="100" width="70" height="250" rx="10" fill="#334155"/>
+    <rect x="195" y="160" width="70" height="190" rx="10" fill="url(#bar)" fill-opacity="0.65"/>
+    <rect x="320" y="215" width="70" height="135" rx="10" fill="url(#bar)"/>
+    <path d="M105 85 L230 145 L355 200" fill="none" stroke="#fbbf24" stroke-width="4" stroke-dasharray="10 8"/>
+    <circle cx="355" cy="200" r="9" fill="#fbbf24"/>
+    <text x="355" y="180" text-anchor="middle" fill="#fde68a" font-size="30" font-weight="700">−46%</text>
+  </g>
+  <text x="1080" y="680" text-anchor="end" fill="#5eead4" fill-opacity="0.6" font-size="22" letter-spacing="4">LLM INFERENCE · TPU v5e</text>
+</svg>

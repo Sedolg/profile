@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071226"/>
+      <stop offset="1" stop-color="#0b2140"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <rect x="110" y="90" width="980" height="570" rx="24" fill="#0c1a33" stroke="#ffffff" stroke-opacity="0.08"/>
+  <!-- sidebar -->
+  <rect x="110" y="90" width="200" height="570" rx="24" fill="#0f2142"/>
+  <rect x="140" y="125" width="44" height="44" rx="12" fill="#38bdf8"/>
+  <g fill="#bfdbfe" fill-opacity="0.35">
+    <rect x="140" y="210" width="130" height="12" rx="6" fill-opacity="0.8"/>
+    <rect x="140" y="250" width="110" height="12" rx="6"/>
+    <rect x="140" y="290" width="120" height="12" rx="6"/>
+    <rect x="140" y="330" width="90" height="12" rx="6"/>
+  </g>
+  <!-- KPI cards -->
+  <g fill="#132a52" stroke="#ffffff" stroke-opacity="0.06">
+    <rect x="340" y="120" width="230" height="110" rx="16"/>
+    <rect x="590" y="120" width="230" height="110" rx="16"/>
+    <rect x="840" y="120" width="220" height="110" rx="16"/>
+  </g>
+  <g fill="#bfdbfe" fill-opacity="0.4">
+    <rect x="364" y="145" width="90" height="10" rx="5"/><rect x="614" y="145" width="90" height="10" rx="5"/><rect x="864" y="145" width="90" height="10" rx="5"/>
+  </g>
+  <g fill="#f0f9ff" fill-opacity="0.9">
+    <rect x="364" y="175" width="130" height="28" rx="8"/><rect x="614" y="175" width="110" height="28" rx="8"/><rect x="864" y="175" width="120" height="28" rx="8"/>
+  </g>
+  <rect x="510" y="178" width="40" height="20" rx="10" fill="#22c55e" fill-opacity="0.6"/>
+  <!-- chart -->
+  <rect x="340" y="255" width="480" height="375" rx="16" fill="#132a52"/>
+  <path d="M370 560 L440 520 L510 535 L580 470 L650 480 L720 410 L790 380 L790 600 L370 600Z" fill="url(#area)"/>
+  <path d="M370 560 L440 520 L510 535 L580 470 L650 480 L720 410 L790 380" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="#38bdf8"><circle cx="720" cy="410" r="7"/><circle cx="790" cy="380" r="7"/></g>
+  <rect x="370" y="285" width="160" height="12" rx="6" fill="#bfdbfe" fill-opacity="0.5"/>
+  <!-- table -->
+  <rect x="840" y="255" width="220" height="375" rx="16" fill="#132a52"/>
+  <g fill="#bfdbfe" fill-opacity="0.3">
+    <rect x="864" y="290" width="170" height="12" rx="6" fill-opacity="0.55"/>
+    <rect x="864" y="340" width="150" height="10" rx="5"/><rect x="864" y="385" width="170" height="10" rx="5"/>
+    <rect x="864" y="430" width="130" height="10" rx="5"/><rect x="864" y="475" width="160" height="10" rx="5"/>
+    <rect x="864" y="520" width="140" height="10" rx="5"/><rect x="864" y="565" width="165" height="10" rx="5"/>
+  </g>
+  <g transform="translate(1030 610)"><path d="M0 -40 L28 -28 V-8 C28 10 14 22 0 28 C-14 22 -28 10 -28 -8 V-28Z" fill="#22c55e" fill-opacity="0.85"/><path d="M-10 -8l7 7 13-13" stroke="#052e16" stroke-width="5" fill="none"/></g>
+</svg>

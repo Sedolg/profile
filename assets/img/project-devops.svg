@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06121f"/>
+      <stop offset="1" stop-color="#0d1b33"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.15" r="0.65">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <!-- pipeline -->
+  <path d="M200 230H1000" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <g>
+    <circle cx="200" cy="230" r="54" fill="#0f2a2a" stroke="#34d399" stroke-width="4"/>
+    <path d="M180 230l14 14 26-28" stroke="#34d399" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="467" cy="230" r="54" fill="#0f2a2a" stroke="#34d399" stroke-width="4"/>
+    <path d="M447 230l14 14 26-28" stroke="#34d399" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="733" cy="230" r="54" fill="#0c2733" stroke="#22d3ee" stroke-width="4"/>
+    <path d="M733 200v30l20 14" stroke="#22d3ee" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <circle cx="1000" cy="230" r="54" fill="#141b33" stroke="#64748b" stroke-width="4" stroke-dasharray="10 8"/>
+    <path d="M985 245l30-30M990 215h25v25" stroke="#94a3b8" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g fill="#a7f3d0" fill-opacity="0.75" font-size="22" font-weight="600" text-anchor="middle" letter-spacing="2">
+    <text x="200" y="325">BUILD</text><text x="467" y="325">TEST</text>
+    <text x="733" y="325" fill="#a5f3fc">DEPLOY</text><text x="1000" y="325" fill="#cbd5e1" fill-opacity="0.6">ROLLBACK</text>
+  </g>
+  <!-- containers -->
+  <g transform="translate(160 410)">
+    <rect width="420" height="230" rx="20" fill="#0b1a30" stroke="#ffffff" stroke-opacity="0.08"/>
+    <g fill="#22d3ee">
+      <rect x="30" y="40" width="110" height="70" rx="10" fill-opacity="0.7"/>
+      <rect x="155" y="40" width="110" height="70" rx="10" fill-opacity="0.45"/>
+      <rect x="280" y="40" width="110" height="70" rx="10" fill-opacity="0.6"/>
+      <rect x="30" y="125" width="110" height="70" rx="10" fill-opacity="0.35"/>
+      <rect x="155" y="125" width="110" height="70" rx="10" fill-opacity="0.8"/>
+      <rect x="280" y="125" width="110" height="70" rx="10" fill-opacity="0.3"/>
+    </g>
+  </g>
+  <!-- terminal -->
+  <g transform="translate(620 410)" font-family="JetBrains Mono, Consolas, monospace" font-size="20">
+    <rect width="420" height="230" rx="20" fill="#050c18" stroke="#ffffff" stroke-opacity="0.08"/>
+    <circle cx="30" cy="28" r="6" fill="#ff5f57"/><circle cx="50" cy="28" r="6" fill="#febc2e"/><circle cx="70" cy="28" r="6" fill="#28c840"/>
+    <text x="30" y="80" fill="#34d399">$ docker build .</text>
+    <text x="30" y="115" fill="#94a3b8">✓ 142 tests passed</text>
+    <text x="30" y="150" fill="#94a3b8">✓ image pushed</text>
+    <text x="30" y="185" fill="#22d3ee">→ deployed to prod</text>
+  </g>
+  <text x="1040" y="700" text-anchor="end" fill="#6ee7b7" fill-opacity="0.6" font-size="22" letter-spacing="4">CI/CD · DOCKER · AWS</text>
+</svg>

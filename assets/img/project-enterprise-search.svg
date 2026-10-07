@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="1" stop-color="#1b1446"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g stroke="#ffffff" stroke-opacity="0.04">
+    <path d="M0 125H1200M0 250H1200M0 375H1200M0 500H1200M0 625H1200"/>
+    <path d="M200 0V750M400 0V750M600 0V750M800 0V750M1000 0V750"/>
+  </g>
+  <!-- window -->
+  <rect x="150" y="110" width="900" height="540" rx="22" fill="#111735" stroke="#ffffff" stroke-opacity="0.08"/>
+  <circle cx="190" cy="145" r="7" fill="#ff5f57"/><circle cx="215" cy="145" r="7" fill="#febc2e"/><circle cx="240" cy="145" r="7" fill="#28c840"/>
+  <!-- search bar -->
+  <rect x="210" y="195" width="780" height="70" rx="35" fill="#1a2148" stroke="url(#accent)" stroke-width="2"/>
+  <circle cx="255" cy="230" r="13" fill="none" stroke="#22d3ee" stroke-width="4"/>
+  <path d="M265 240l12 12" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+  <rect x="295" y="222" width="360" height="16" rx="8" fill="#c7d2fe" fill-opacity="0.55"/>
+  <path d="M940 210l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#a78bfa"/>
+  <!-- AI answer -->
+  <rect x="210" y="295" width="780" height="140" rx="18" fill="#7c5cff" fill-opacity="0.12" stroke="#a78bfa" stroke-opacity="0.35"/>
+  <rect x="240" y="320" width="110" height="22" rx="11" fill="url(#accent)"/>
+  <rect x="240" y="360" width="690" height="12" rx="6" fill="#e0e7ff" fill-opacity="0.45"/>
+  <rect x="240" y="384" width="620" height="12" rx="6" fill="#e0e7ff" fill-opacity="0.35"/>
+  <rect x="240" y="408" width="480" height="12" rx="6" fill="#e0e7ff" fill-opacity="0.25"/>
+  <!-- source cards -->
+  <g fill="#1a2148" stroke="#ffffff" stroke-opacity="0.07">
+    <rect x="210" y="460" width="245" height="150" rx="16"/>
+    <rect x="477" y="460" width="245" height="150" rx="16"/>
+    <rect x="744" y="460" width="246" height="150" rx="16"/>
+  </g>
+  <g fill="#22d3ee"><rect x="232" y="482" width="40" height="40" rx="10" fill-opacity="0.8"/><rect x="499" y="482" width="40" height="40" rx="10" fill="#a78bfa"/><rect x="766" y="482" width="40" height="40" rx="10" fill="#f472b6"/></g>
+  <g fill="#c7d2fe" fill-opacity="0.35">
+    <rect x="232" y="540" width="190" height="10" rx="5"/><rect x="232" y="562" width="140" height="10" rx="5"/>
+    <rect x="499" y="540" width="190" height="10" rx="5"/><rect x="499" y="562" width="120" height="10" rx="5"/>
+    <rect x="766" y="540" width="190" height="10" rx="5"/><rect x="766" y="562" width="150" height="10" rx="5"/>
+  </g>
+  <text x="1010" y="700" text-anchor="end" fill="#a5b4fc" fill-opacity="0.6" font-size="22" letter-spacing="4">RAG · ENTERPRISE SEARCH</text>
+</svg>
